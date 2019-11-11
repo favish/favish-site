@@ -30,6 +30,7 @@ plugins:
 
 collections:
   case_studies:
+    permalink: /case-studies/:path/
     output: true
 
 # Exclude from processing.

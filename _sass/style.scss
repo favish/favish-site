@@ -29,9 +29,9 @@ $colors: (
         'maroon': #85144b,
         'fuchsia': #F012BE,
         'purple': #B10DC9,
-        'black': #000000,
+        'black': #222222,
         'dark-gray': #666666,
-        'gray': #AAAAAA,
+        'gray': #9b9aa1,
         'light-gray': #f2f2f2,
         'silver': #DDDDDD,
         'white': #FFFFFF,
@@ -39,6 +39,16 @@ $colors: (
 );
 
 @import "../node_modules/koan-sass/sass/koan-no-vars";
+
+.debug {
+  * {
+    outline: 1px solid blue;
+  }
+}
+
+body {
+  color: map-get($colors, 'black');
+}
 
 .fw-black {
   font-weight: 900;
@@ -62,4 +72,41 @@ $colors: (
 .case-study-image-container {
   max-height: 300px;
   overflow: hidden;
+}
+
+.markdown {
+
+  h2 {
+    font-size: 1.5rem;
+    color: map-get($colors, 'black');
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin-bottom: 1.5rem;
+  }
+
+  blockquote {
+    margin: 3rem 0;
+    p {
+      color: map-get($colors, 'magenta');
+      font-weight: bold;
+    }
+  }
+
+  cite {
+    font-size: 0.8rem;
+    color: map-get($colors, 'gray');
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+  }
+
+  img {
+    display: block;
+    margin: 3rem 0;
+  }
+
 }
