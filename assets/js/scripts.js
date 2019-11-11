@@ -2,8 +2,12 @@ const caseStudiesContainer = document.getElementById('caseStudies');
 const caseStudies = caseStudiesContainer.querySelectorAll('.case-study');
 const nextCaseButton = document.getElementById('nextCase');
 const previousCaseButton = document.getElementById('previousCase');
+const currentCase = document.getElementById('currentCase');
+const totalCases = document.getElementById('totalCases');
 
 let currentIndex = 0;
+
+totalCases.innerText = '0' + caseStudies.length;
 
 function hideAllCaseStudies() {
   caseStudies.forEach(function(element, index) {
@@ -19,6 +23,10 @@ function showCaseStudyAtCurrentIndex() {
   });
 }
 
+function setCurrentIndexDisplay() {
+  currentCase.innerText = '0' + (currentIndex + 1);
+}
+
 nextCaseButton.addEventListener('click', function(e) {
   e.preventDefault();
 
@@ -31,7 +39,7 @@ nextCaseButton.addEventListener('click', function(e) {
   }
 
   showCaseStudyAtCurrentIndex();
-
+  setCurrentIndexDisplay();
 });
 
 previousCaseButton.addEventListener('click', function(e) {
@@ -46,5 +54,6 @@ previousCaseButton.addEventListener('click', function(e) {
   }
 
   showCaseStudyAtCurrentIndex();
+  setCurrentIndexDisplay();
 
 });
