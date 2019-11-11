@@ -67,6 +67,22 @@ input, textarea {
   background: map-get($colors, 'light-gray');
 }
 
+.nav {
+  a {
+    color: map-get($colors, 'white');
+  }
+}
+
+.nav-dark {
+  @extend .bdrc-magenta;
+  @extend .bs-s;
+  @extend .btw-6;
+
+  a {
+    color: map-get($colors, 'black')
+  }
+}
+
 .fw-black {
   font-weight: 900;
 }
