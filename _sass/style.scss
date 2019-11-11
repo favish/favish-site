@@ -1,0 +1,65 @@
+// Grid
+$grid-max-width: 1200px;
+$grid-gutter: 2rem;
+$grid-columns: 12;
+
+// Breakpoints
+$breakpoint-sm: 500px;
+$breakpoint-md: 700px;
+$breakpoint-lg: 1000px;
+
+// Box Shadow
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+
+// Fonts
+$custom-font: 'Muli', sans-serif;
+
+// Colors
+$colors: (
+        'navy': #001f3f,
+        'blue': #0074D9,
+        'aqua': #7FDBFF,
+        'teal': #39CCCC,
+        'olive': #3D9970,
+        'green': #2ECC40,
+        'lime': #01FF70,
+        'yellow': #FFDC00,
+        'orange': #FF851B,
+        'red': #FF4136,
+        'maroon': #85144b,
+        'fuchsia': #F012BE,
+        'purple': #B10DC9,
+        'black': #000000,
+        'dark-gray': #666666,
+        'gray': #AAAAAA,
+        'light-gray': #f2f2f2,
+        'silver': #DDDDDD,
+        'white': #FFFFFF,
+        'magenta': #e91d63,
+);
+
+@import "../node_modules/koan-sass/sass/koan-no-vars";
+
+.fw-black {
+  font-weight: 900;
+}
+
+.icon {
+  height: 1rem;
+}
+
+.client-logo {
+  width: 150px;
+  &.small {
+    width: 75px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.case-study-image-container {
+  max-height: 300px;
+  overflow: hidden;
+}
