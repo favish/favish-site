@@ -50,6 +50,23 @@ body {
   color: map-get($colors, 'black');
 }
 
+label {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+input, textarea {
+  width: 100%;
+  border: 1px solid #dbdbe0;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0.5rem 0.75rem;
+  line-height: 1.7rem;
+  background: map-get($colors, 'light-gray');
+}
+
 .fw-black {
   font-weight: 900;
 }

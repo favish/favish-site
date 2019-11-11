@@ -12,7 +12,7 @@
 
   <body class="ff-custom">
 
-    {% if layout.dark_nav == true %}
+    {% if layout.dark_nav == true or page.dark_nav == true %}
       {% include dark-nav.html %}
     {% else %}
       {% include nav.html %}
