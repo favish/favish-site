@@ -50,10 +50,6 @@ body {
   color: map-get($colors, 'black');
 }
 
-img {
-  width: 100%;
-}
-
 label {
   display: block;
   font-size: 0.8rem;
@@ -109,6 +105,10 @@ input, textarea {
 .case-study-image-container {
   max-height: 300px;
   overflow: hidden;
+}
+
+.case-study-feat-image {
+  width: 100%;
 }
 
 .markdown {
