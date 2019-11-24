@@ -50,6 +50,10 @@ body {
   color: map-get($colors, 'black');
 }
 
+img {
+  width: 100%;
+}
+
 label {
   display: block;
   font-size: 0.8rem;
@@ -117,9 +121,13 @@ input, textarea {
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 2rem;
     margin-bottom: 2rem;
+
+    @include breakpoint-sm {
+      font-size: 1.5rem;
+    }
   }
 
   blockquote {
@@ -131,10 +139,14 @@ input, textarea {
   }
 
   cite {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: map-get($colors, 'gray');
     text-transform: uppercase;
     margin-top: 0.5rem;
+
+    @include breakpoint-sm {
+      font-size: 0.8rem;
+    }
   }
 
   img {
