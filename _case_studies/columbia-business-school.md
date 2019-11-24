@@ -4,6 +4,9 @@ tagline: Building an online brand for the prestigious NYC university
 image: /assets/images/columbia/columbia-business-school.jpg
 is_featured: true
 layout: case_study
+
+sections:
+    - This is a section
 ---
 
 ## Challenge
