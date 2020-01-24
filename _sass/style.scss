@@ -57,20 +57,35 @@ body {
 
 .splash-1 {
   position: absolute;
-  left: -50px;
+  left: -120px;
   top: 100px;
+
+  @include breakpoint-md {
+    left: -50px;
+    top: 100px;
+  }
 }
 
 .splash-2 {
   position: absolute;
   right: -90px;
   bottom: 0;
+  display: none;
+
+  @include breakpoint-md {
+    display: block;
+  }
 }
 
 .splash-3 {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -100px;
+
+  @include breakpoint-md {
+    display: block;
+    right: 0;
+  }
 }
 
 .lake-flato-home-image {
