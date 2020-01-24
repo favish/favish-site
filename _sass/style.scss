@@ -29,13 +29,14 @@ $colors: (
         'maroon': #85144b,
         'fuchsia': #F012BE,
         'purple': #B10DC9,
-        'black': #222222,
-        'dark-gray': #666666,
+        'black': #333333,
+        'dark-gray': #424242,
         'gray': #9b9aa1,
         'light-gray': #f2f2f2,
         'silver': #DDDDDD,
         'white': #FFFFFF,
         'magenta': #e91d63,
+        'brand': #ffb819,
 );
 
 @import "../node_modules/koan-sass/sass/koan-no-vars";
@@ -48,6 +49,19 @@ $colors: (
 
 body {
   color: map-get($colors, 'black');
+}
+
+.brand-container {
+  display: flex;
+  flex: 0 0 25%;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-image {
+  padding: 50px 15px;
+  max-width: 146px;
+  height: auto;
 }
 
 label {
@@ -65,22 +79,6 @@ input, textarea {
   padding: 0.5rem 0.75rem;
   line-height: 1.7rem;
   background: map-get($colors, 'light-gray');
-}
-
-.nav {
-  a {
-    color: map-get($colors, 'white');
-  }
-}
-
-.nav-dark {
-  @extend .bdrc-magenta;
-  @extend .bs-s;
-  @extend .btw-6;
-
-  a {
-    color: map-get($colors, 'black')
-  }
 }
 
 .fw-black {

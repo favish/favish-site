@@ -2,117 +2,76 @@
 layout: default
 ---
 
-<div class="bc-magenta py-4 py-md-8">
-  <div class="container py-4 py-md-8">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="fw-black fz-2 fz-md-6 c-white">We create beautiful digital experiences.</h1>
+<div class="bs-s bdrc-brand btw-6">
+  <div class="container py-4">
+    <div class="row py-8">
+      <div class="col-12 col-md-12 py-8">
+        <h1 class="fz-5 fw-black mb-4">Let's build a memorable digital experience.</h1>
+        <a class="fz-15 ff-custom bc-brand bs-n br-3 px-2 py-1 bs cp">Get started</a>
       </div>
     </div>
-  </div>
-</div>
-
-<div class="py-md-2">
-  <div class="container py-6 py-md-8">
-
-    <div id="caseStudies">
-      {% for case_study in site.case_studies %}
-        {% if case_study.is_featured %}
-          {% if forloop.index0 == 0 %}
-            <div class="case-study">
-          {% else %}
-            <div class="case-study hidden">
-          {% endif %}
-            <div class="row mb-1">
-              <div class="col-12 col-md-6">
-                <h3 class="c-dark-gray fz-15 mb-2">Our Work</h3>
-                <h2 class="fw-black fz-3 fz-md-4 mb-1">{{ case_study.name }}</h2>
-                <a href="{{ case_study.url }}" class="c-black p-1 d-ib td-n bdrc-black bbw-1 bs-s mb-2 mb-md-0">View Case Study</a>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="case-study-image-container">
-                  <img src="{{ case_study.image }}" alt="{{ case_study.name }}">
-                </div>
-              </div>
-            </div>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="row mt-3 mt-md-0">
-      <div class="col-12 col-md-5 d-f">
-        <a href="/" id="previousCase" class="mr-2"><img class="icon d-i" src="/assets/icons/arrow-thin-left.svg" alt="<"></a>
-        <p><span id="currentCase">01</span> - <span id="totalCases">01</span></p>
-        <a href="/" id="nextCase" class="ml-2"><img class="icon d-i" src="/assets/icons/arrow-thin-right.svg" alt="<"></a>
-      </div>
-    </div>
-
   </div>
 </div>
 
 <div class="bc-light-gray">
-  <div class="container py-8">
-    <div class="row mb-4">
-      <div class="col-12 ta-c">
-        <h3 class="fw-black fz-2 mb-1">These brands trust us to deliver</h3>
-        <div style="width: 50px;" class="d-ib bbw-3 bdrc-magenta bs-s"></div>
-      </div>
-    </div>
-    <div class="row mb-md-6">
-      <div class="col-6 col-md-3 d-f ai-c jc-c mb-4 mb-md-0">
-        <img class="client-logo small" src="/assets/images/client-logos/whole-foods.png" alt="Whole Foods">
-      </div>
-      <div class="col-6 col-md-3 d-f ai-c jc-c mb-4 mb-md-0">
-        <img class="client-logo" src="/assets/images/client-logos/accenture.png" alt="Accenture">
-      </div>
-      <div class="col-6 col-md-3 d-f ai-c jc-c mb-4 mb-md-0">
-        <img class="client-logo" src="/assets/images/client-logos/johnson.png" alt="Johnson Johnson">
-      </div>
-      <div class="col-6 col-md-3 d-f ai-c jc-c mb-4 mb-md-0">
-        <img class="client-logo small" src="/assets/images/client-logos/usda-organic.png" alt="USDA Organic">
-      </div>
-    </div>
-    <div class="row mb-md-6">
-      <div class="col-6 col-md-3 d-f ai-c jc-c mb-4 mb-md-0">
-        <img class="client-logo" src="/assets/images/client-logos/texas-state.png" alt="Whole Foods">
-      </div>
-      <div class="col-6 col-md-3 d-f ai-c jc-c mb-4 mb-md-0">
-        <img class="client-logo" src="/assets/images/client-logos/victrola.png" alt="Accenture">
-      </div>
-      <div class="col-6 col-md-3 d-f ai-c jc-c mb-4 mb-md-0">
-        <img class="client-logo small" src="/assets/images/client-logos/page.png" alt="Johnson Johnson">
-      </div>
-      <div class="col-6 col-md-3 d-f ai-c jc-c mb-4 mb-md-0">
-        <img class="client-logo small" src="/assets/images/client-logos/central-texas-food-bank.png" alt="USDA Organic">
-      </div>
-    </div>
+  <div class="container py-6">
     <div class="row">
-      <div class="col-6 col-md-3 d-f ai-c jc-c mb-4 mb-md-0">
-        <img class="client-logo" src="/assets/images/client-logos/mckinsey.png" alt="Whole Foods">
+      <div class="col-12 ta-c mb-3">
+        <h2 class="fz-2 fw-black mb-1">These brands trust us to deliver.</h2>
+        <p>Don't worry, we've saved you a space...</p>
       </div>
-      <div class="col-6 col-md-3 d-f ai-c jc-c mb-4 mb-md-0">
-        <img class="client-logo" src="/assets/images/client-logos/kitco.png" alt="Accenture">
+      <div class="container mb-2">
+        <div class="row">
+          <div class="col-12 d-f jc-c">
+            <div style="width: 50px; height: 2px;" class="bc-brand"></div>
+          </div>
+        </div>
       </div>
-      <div class="col-6 col-md-3 d-f ai-c jc-c mb-4 mb-md-0">
-        <img class="client-logo" src="/assets/images/client-logos/gavilon.png" alt="Johnson Johnson">
+      <div class="col-12">
+        <div class="d-f fw-wr">
+          <div class="brand-container">
+            <img class="brand-image" src="/assets/images/client-logos/whole-foods.png" alt="">
+          </div>
+          <div class="brand-container">
+            <img class="brand-image" src="/assets/images/client-logos/accenture.png" alt="">
+          </div>
+          <div class="brand-container">
+            <img class="brand-image" src="/assets/images/client-logos/johnson.png" alt="">
+          </div>
+          <div class="brand-container">
+            <p class="brand-image ta-c fz-15 fw-black">Your Brand Here!</p>
+          </div>
+        </div>
       </div>
-      <div class="col-6 col-md-3 d-f ai-c jc-c mb-4 mb-md-0">
-        <img class="client-logo" src="/assets/images/client-logos/equitynet.png" alt="USDA Organic">
+      <div class="col-12">
+        <div class="d-f fw-wr">
+          <div class="brand-container">
+            <img class="brand-image" src="/assets/images/client-logos/tx-state.png" alt="">
+          </div>
+          <div class="brand-container">
+            <img class="brand-image" src="/assets/images/client-logos/victrola.png" alt="">
+          </div>
+          <div class="brand-container">
+            <img class="brand-image" src="/assets/images/client-logos/usda.png" alt="">
+          </div>
+          <div class="brand-container">
+            <img class="brand-image" src="/assets/images/client-logos/ut.png" alt="">
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="bc-magenta c-white py-md-6">
+<div class="bc-brand c-black py-md-6">
   <div class="container py-6 py-md-8">
     <div class="row mb-1">
       <div class="col-12 col-md-8">
         <h3 class="fz-3 fw-black mb-2">Work with us.</h3>
         <p class="mb-3 fz-15 fz-md-2">From Strategy, User Experience, Design, Development and Launch, we can take you every step of the way.</p>
-        <a href="/contact" class="fz-15 fw-b c-white d-ib td-n mb-2 mb-md-0 d-f ai-c">
+        <a href="/contact" class="fz-15 fw-b c-black d-ib td-n mb-2 mb-md-0 d-f ai-c">
           Get in touch
-          <img class="icon ml-1" src="/assets/icons/arrow-thin-right-white.svg" alt=">">
+          <img class="icon ml-1" src="/assets/icons/arrow-thin-right.svg" alt=">">
         </a>
       </div>
   </div>
