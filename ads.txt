@@ -345,6 +345,7 @@ openx.com, 539625136, RESELLER
 rubiconproject.com, 13510, RESELLER
 video.unrulymedia.com, 3637858340, RESELLER
 rhythmone.com, 3637858340, RESELLER, a670c89d4a324e47
+pubmatic.com, 160058, RESELLER, 5d62403b186f2ace
 
 # Primis
 Sekindo.com, 30264, DIRECT, b6b21d256ef43532
