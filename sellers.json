@@ -6,37 +6,37 @@
       "seller_id": "1",
       "seller_type": "PUBLISHER",
       "name": "Zerohedge LLC",
-      "domain": "zerohedge.com",
+      "domain": "zerohedge.com"
     },
     {
       "seller_id": "2",
       "seller_type": "PUBLISHER",
       "name": "Kitco Metals Inc.",
-      "domain": "kitco.com",
+      "domain": "kitco.com"
     },
     {
       "seller_id": "3",
       "seller_type": "PUBLISHER",
       "name": "Kitco Metals Inc.",
-      "domain": "kitcometals.com",
+      "domain": "kitcometals.com"
     },
     {
       "seller_id": "4",
       "seller_type": "PUBLISHER",
       "name": "Kitco Metals Inc.",
-      "domain": "kitcosilver.com",
+      "domain": "kitcosilver.com"
     },
     {
       "seller_id": "5",
       "seller_type": "PUBLISHER",
       "name": "Marina Media, LLC",
-      "domain": "thewealthadvisor.com",
+      "domain": "thewealthadvisor.com"
     },
     {
       "seller_id": "6",
       "seller_type": "PUBLISHER",
       "name": "Vision Group SEZC",
-      "domain": "realvision.com",
+      "domain": "realvision.com"
     }
-  ],
+  ]
 }
