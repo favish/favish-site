@@ -346,6 +346,14 @@ rubiconproject.com, 13510, RESELLER
 video.unrulymedia.com, 3637858340, RESELLER
 rhythmone.com, 3637858340, RESELLER, a670c89d4a324e47
 pubmatic.com, 160058, RESELLER, 5d62403b186f2ace
+advertising.com, 28949, RESELLER
+yieldlab.net, 495507, RESELLER
+yieldlab.net, 227224, RESELLER
+yieldlab.net, 5494672, RESELLER
+yieldlab.net, 506261, RESELLER
+yieldlab.net, 5798882, RESELLER
+yieldlab.net, 2172218, RESELLER
+yieldlab.net, 781119, RESELLER
 
 # Primis
 Sekindo.com, 30264, DIRECT, b6b21d256ef43532
