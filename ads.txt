@@ -232,7 +232,6 @@ yieldlab.net, 2172218, RESELLER
 yieldlab.net, 781119, RESELLER
 rubiconproject.com, 23390, RESELLER, 0bfd66d529a55807
 rhythmone.com, 3637858340, RESELLER , a670c89d4a324e47
-rubiconproject.com, 23390, RESELLER, 0bfd66d529a55807
 
 # Primis
 primis.tech, 30264, DIRECT, b6b21d256ef43532
