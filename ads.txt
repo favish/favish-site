@@ -1,5 +1,5 @@
 # AdX
-google.com, pub-2072967795367101, DIRECT, f08c47fec0942fa0
+google.com, pub-2072967795367101, RESELLER, f08c47fec0942fa0
 
 # HB
 google.com, pub-8062725918111038, DIRECT, f08c47fec0942fa0
