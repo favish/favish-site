@@ -237,6 +237,7 @@ rubiconproject.com, 23392, RESELLER, 0bfd66d529a55807
 adtelligent.com, 440622, RESELLER
 sovrn.com, 356096, RESELLER, fafdf38b16bf6b2b
 lijit.com, 356096-eb, RESELLER, fafdf38b16bf6b2b
+appnexus.com, 12840, RESELLER
 
 # Primis
 primis.tech, 30264, DIRECT, b6b21d256ef43532
