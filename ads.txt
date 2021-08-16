@@ -52,6 +52,19 @@ openx.com, 540274407, RESELLER, 6a698e2ec38604c6
 smaato.com, 1100047713, RESELLER, 07bcf65f187117b4
 sharethrough.com, 13ba2e22, DIRECT, d53b998a7bd4ecd2
 
+# Media.net
+Media.net, 8CUZX691M, DIRECT
+openx.com, 537100188, RESELLER, 6a698e2ec38604c6
+pubmatic.com, 159463, RESELLER, 5d62403b186f2ace
+EMXDGT.com, 1759, Reseller, 1e1d41537f7cad7f
+Appnexus.com, 1356, RESELLER, f5ab79cb980f11d1
+google.com, pub-7439041255533808, RESELLER, f08c47fec0942fa0
+rubiconproject.com, 19396, Reseller, 0bfd66d529a55807
+onetag.com, 5d49f482552c9b6, Reseller
+sonobi.com, 83729e979b, RESELLER
+33across.com, 0010b00002cGp2AAAS, Reseller, bbea06d9c4d2853c
+rhythmone.com, 3611299104, RESELLER
+
 # Amazon
 aps.amazon.com,940db4ee-28cf-4307-9b65-76d8ba12e927,DIRECT
 pubmatic.com,158726,DIRECT,5d62403b186f2ace
