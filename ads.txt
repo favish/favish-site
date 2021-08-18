@@ -264,6 +264,7 @@ lijit.com, 356096-eb, RESELLER, fafdf38b16bf6b2b
 appnexus.com, 12840, RESELLER
 appnexus.com, 12447, RESELLER, f5ab79cb980f11d1
 appnexus.com, 12840, RESELLER
+aps.amazon.com,171208af-037d-48f1-af92-1c24c2ee644a,DIRECT
 
 # Primis
 primis.tech, 30264, DIRECT, b6b21d256ef43532
