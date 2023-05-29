@@ -37,6 +37,8 @@ $colors: (
         'white': #FFFFFF,
         'magenta': #e91d63,
         'brand': #ffb819,
+        'brand-second': #f9b81a,
+        'dark-black': #000000,
 );
 
 @import "../node_modules/koan-sass/sass/koan-no-vars";
@@ -204,4 +206,285 @@ input, textarea {
     margin-right: -50vw;
   }
 
+}
+
+.fd-md-r {
+  @include breakpoint-md {
+      flex-direction: row;
+  }
+}
+
+.fd-md-c {
+  @include breakpoint-md {
+      flex-direction: column;
+  }
+}
+
+.fd-sm-c {
+  @include breakpoint-sm {
+      flex-direction: column;
+  }
+}
+
+.dir-title {
+  margin: 106px auto;
+}
+
+.leading-title {
+  line-height: 32px;
+  @include breakpoint-md {
+      line-height: 88px;
+  }
+}
+
+.texas-information {
+  border: 2px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 16px 12px;
+  gap: 10px;
+  margin: auto;
+
+  &-text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000000;
+
+      &:first-child {
+          margin-bottom: 10px;
+      }
+  }
+}
+
+.section {
+  &-title {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 110%;
+  }
+  &-wrap {
+      padding-top: 40px;
+      padding-bottom: 40px;
+  }
+
+  &-line {
+      border: 2px solid #f9b81a;
+      margin: 24px 0;
+      width: 175px;
+  }
+}
+
+.quote-contact-container {
+  margin: auto !important;
+}
+
+.quote {
+  &-text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 24px;
+
+      @include breakpoint-md {
+          margin-right: 64px;
+      }
+  }
+  &-detail {
+      margin-bottom: 20px;
+
+      &-title {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 116%;
+          color: #000000;
+      }
+      &-content {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 116%;
+          color: #000000;
+      }
+      &:last-child {
+          margin-bottom: auto;
+      }
+  }
+}
+
+.contact-content {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 116%;
+  color: #000000;
+}
+
+.jc-r {
+  justify-content: right;
+}
+
+.work-with-us {
+  &-bg {
+      background-color: #ffb819;
+      @include breakpoint-md {
+          background-image: url("../assets/images/bg-work-with-us.png");
+          background-size: cover;
+      }
+  }
+
+  &-container {
+      padding-left: 24px !important;
+      padding-right: 24px !important;
+  }
+
+  @include breakpoint-md {
+      &-container {
+          padding: 0 2rem;
+      }
+  }
+
+  &-title {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 110%;
+      color: #15130f;
+      margin-bottom: 24px;
+  }
+  &-content {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 116%;
+      color: #15130f;
+      margin-bottom: 24px;
+      width: 100%;
+
+      @include breakpoint-md {
+          width: 80%;
+      }
+  }
+}
+
+.team {
+  margin-bottom: 42px;
+}
+
+.get-in-touch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  width: 100%;
+
+  @include breakpoint-md {
+      width: fit-content;
+  }
+
+  &-text {
+      padding: 18px 24px;
+      font-weight: 800;
+      font-size: 16px !important;
+      line-height: 110%;
+      color: #000000;
+      gap: 40px;
+      width: 100%;
+      justify-content: space-between;
+  }
+}
+
+// Our Services
+
+#wrapper-services {
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 116%;
+  color: #000000;
+  min-height: 0;
+  margin-bottom: 28px;
+  @include breakpoint-md {
+      margin-bottom: auto;
+  }
+  & li {
+      & {
+          margin-bottom: 28px;
+          animation: bounceInUp 1s ease both;
+      }
+
+      &:last-child {
+          margin-bottom: 0;
+          animation: bounceInUp 1s ease both;
+      }
+
+      & button {
+          display: flex;
+          padding: 0;
+          border: 3px solid black;
+          border-radius: 4px;
+          width: 25px;
+          height: 25px;
+          position: relative;
+          &:before,
+          &:after {
+              content: "";
+              height: 3px;
+              width: 16px;
+              background-color: black;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+          }
+          &:before {
+              transform: translate(-50%, -50%) rotate(180deg);
+          }
+          &:after {
+              transform: translate(-50%, -50%);
+          }
+      }
+
+      & button::before,
+      & button::after {
+          transition: all 0.25s ease-in-out;
+      }
+      & input[type="checkbox"] {
+          position: absolute;
+          cursor: pointer;
+          width: 100%;
+          height: -webkit-fill-available;
+          z-index: 1;
+          opacity: 0;
+          &:checked ~ p {
+              margin-top: 0;
+              max-height: 0;
+              opacity: 0;
+              transform: translate(0, 50%);
+          }
+          &:checked ~ div button:before {
+              transform: translate(-50%, -50%) rotate(90deg);
+          }
+      }
+
+      & p {
+          position: relative;
+          overflow: hidden;
+          opacity: 1;
+          transform: translate(0, 0);
+          z-index: 2;
+          transition: all 500ms ease;
+          margin-top: 16px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 116%;
+          color: #333333;
+      }
+  }
 }
