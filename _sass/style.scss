@@ -428,12 +428,10 @@ textarea {
     & li {
         & {
             margin-bottom: 24px;
-            transition: opacity 1500ms;
         }
 
         &:last-child {
             margin-bottom: 0;
-            transition: opacity 1500ms;
         }
 
         & button {
@@ -455,16 +453,18 @@ textarea {
                 left: 50%;
             }
             &:before {
-                transform: translate(-50%, -50%) rotate(180deg);
-            }
-            &:after {
-                transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%) rotate(90deg);
+                opacity: 0;
+                transition: opacity 300ms ease-out;
             }
         }
 
         & button::before,
         & button::after {
-            transition: all 0.5s ease-in-out;
+            transform: translate(-50%, -50%);
+        }
+        & button::before {
+            transform: translate(-50%, -50%) rotate(90deg);
         }
         & input[type="checkbox"] {
             position: absolute;
@@ -478,11 +478,13 @@ textarea {
                 margin-top: 0;
                 max-height: 0;
                 opacity: 0;
-                transform: translate(0, 50%);
-                transition: all 250ms;
+                transition: all 400ms ease-in, max-height 800ms ease-in,
+                    opacity 500ms ease-in;
             }
             &:checked ~ div button:before {
                 transform: translate(-50%, -50%) rotate(90deg);
+                opacity: 1;
+                transition: all 300ms ease-out;
             }
         }
 
@@ -490,9 +492,9 @@ textarea {
             position: relative;
             overflow: hidden;
             opacity: 1;
-            transform: translate(0, 0);
+            max-height: 1000px;
             z-index: 2;
-            transition: opacity 1s;
+            transition: max-height 800ms ease-out, opacity 500ms ease-out;
             margin-top: 12px;
             margin-bottom: 12px;
             font-style: normal;
@@ -503,7 +505,6 @@ textarea {
         }
     }
 }
-
 .footer-contact {
     margin: 12px 0;
     @include breakpoint-md {
