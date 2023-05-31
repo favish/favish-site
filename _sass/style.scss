@@ -296,7 +296,7 @@ textarea {
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
-        line-height: 25px;
+        line-height: 130%;
         margin-bottom: 24px;
 
         @include breakpoint-md {
@@ -330,7 +330,7 @@ textarea {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 116%;
+    line-height: 130%;
     color: #000000;
 }
 
@@ -498,8 +498,9 @@ textarea {
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
-            line-height: 116%;
+            line-height: 130%;
             color: #333333;
+            margin-right: 40px;
         }
     }
 }
