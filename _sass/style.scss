@@ -468,16 +468,18 @@ textarea {
         }
         & input[type="checkbox"] {
             position: absolute;
-            cursor: pointer;
+            @include breakpoint-md {
+                cursor: pointer;
+            }
             width: 100%;
-            height: -webkit-fill-available;
+            height: 28px;
             z-index: 1;
             opacity: 0;
 
             &:checked ~ p {
                 margin-top: 0;
                 max-height: 0;
-                transition: margin-top 300ms ease-in, max-height 300ms ease-in;
+                transition: margin-top 300ms ease-in;
             }
             &:checked ~ div button:before {
                 transform: translate(-50%, -50%) rotate(90deg);
@@ -492,7 +494,7 @@ textarea {
             opacity: 1;
             max-height: 1000px;
             z-index: 2;
-            transition: max-height 300ms ease-out;
+            transition: margin-top 300ms ease-out;
             margin-top: 12px;
             margin-bottom: 12px;
             font-style: normal;
@@ -502,6 +504,10 @@ textarea {
             color: #333333;
             margin-right: 40px;
         }
+    }
+
+    & div h2 {
+        width: calc(100% - 34px);
     }
 }
 
