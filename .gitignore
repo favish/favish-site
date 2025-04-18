@@ -1,7 +1,18 @@
-_site
-.sass-cache
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
+
+# Nix
+.direnv/
+.gems/
+result
+result-*
+
+# Editor files
 .DS_Store
+.vscode/
+.idea/
 node_modules
-.idea
 .Gemfile.lock
