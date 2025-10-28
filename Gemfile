@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "~> 3.1.0"
+ruby "~> 3.4.0"
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
@@ -13,6 +13,10 @@ ruby "~> 3.1.0"
 gem "jekyll", "~> 3.8.6"
 gem "rexml", "~> 3.2"  # Required for kramdown HTML parsing
 gem "webrick", "~> 1.7" # Required for Ruby 3+
+gem "csv", "~> 3.0"       # Required for Ruby 3.4+
+gem "logger", "~> 1.5"    # Required for Ruby 3.4+
+gem "base64", "~> 0.2"    # Required for Ruby 3.4+
+gem "bigdecimal", "~> 3.1" # Required for Ruby 3.4+
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
